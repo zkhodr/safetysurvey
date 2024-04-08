@@ -4,126 +4,128 @@ import { Survey } from 'survey-react-ui';
 import React from 'react';
 
 export default function CybersecurityQuiz() {
-    const questions = [
-        {
-            name: "cyberQuestion1",
-            type: "radiogroup",
-            title: "What is a common method attackers use to steal data?",
-            choices: ["Phishing attacks", "Asking politely", "Using public Wi-Fi", "Physical theft"],
-            correctAnswer: "Phishing attacks"
-        },
-        {
-            name: "cyberQuestion2",
-            type: "radiogroup",
-            title: "What does 'HTTPS' stand for?",
-            choices: ["Hyper Text Transfer Protocol Secure", "Hyper Text Transfer Protocol Simple", "Hyperlink and Text Transfer Protocol Secure", "Hyperlink Transfer Protocol Secure"],
-            correctAnswer: "Hyper Text Transfer Protocol Secure"
-        },
-        {
-    type: "radiogroup",
-    name: "cyberQuestion3",
-    title: "What does a firewall do?",
-    choices: [
-        "Prevents unauthorized access to or from a private network",
-        "Encrypts files on your computer",
-        "Steals personal information",
-        "Increases internet speed"
-    ],
-    correctAnswer: "Prevents unauthorized access to or from a private network",
-    feedback: "Firewalls are designed to prevent unauthorized access to or from a private network, enhancing security."
-},
-{
-    type: "radiogroup",
-    name: "cyberQuestion4",
-    title: "Which practice is most secure for Wi-Fi networks?",
-    choices: [
-        "Using WEP encryption",
-        "Disabling SSID broadcast",
-        "Enabling WPA2 or WPA3 encryption",
-        "Sharing your Wi-Fi password publicly"
-    ],
-    correctAnswer: "Enabling WPA2 or WPA3 encryption",
-    feedback: "WPA2 or WPA3 encryption provides strong security for Wi-Fi networks by encrypting connections."
-},
-{
-    type: "radiogroup",
-    name: "cyberQuestion5",
-    title: "What is 'social engineering' in the context of cybersecurity?",
-    choices: [
-        "Building social media platforms",
-        "The technical structuring of social networks",
-        "Tricking individuals into revealing sensitive information",
-        "Engineering social interactions in public spaces"
-    ],
-    correctAnswer: "Tricking individuals into revealing sensitive information",
-    feedback: "Social engineering involves manipulating individuals into revealing confidential information."
-},
-{
-    type: "radiogroup",
-    name: "cyberQuestion6",
-    title: "Which type of attack involves encrypting the victim's data and demanding payment for the decryption key?",
-    choices: [
-        "Phishing",
-        "Ransomware",
-        "Trojan Horse",
-        "Virus"
-    ],
-    correctAnswer: "Ransomware",
-    feedback: "Ransomware attacks encrypt the victim's data and demand payment for the decryption key."
-},
-{
-    type: "radiogroup",
-    name: "cyberQuestion7",
-    title: "What is the purpose of two-factor authentication?",
-    choices: [
-        "To double the password strength",
-        "To create a backup password",
-        "To add an extra layer of security beyond just the password",
-        "To encrypt password storage"
-    ],
-    correctAnswer: "To add an extra layer of security beyond just the password",
-    feedback: "Two-factor authentication adds an extra layer of security, requiring a second form of verification."
-},
-{
-    type: "radiogroup",
-    name: "cyberQuestion8",
-    title: "What should you do if you receive an unexpected email attachment, even from someone you know?",
-    choices: [
-        "Open it immediately to see what it is",
-        "Download it, then scan it with antivirus software",
-        "Delete the email immediately",
-        "Verify the sender’s identity before opening"
-    ],
-    correctAnswer: "Verify the sender’s identity before opening",
-    feedback: "Verifying the sender’s identity helps prevent opening malicious attachments."
-},
-{
-    type: "radiogroup",
-    name: "cyberQuestion9",
-    title: "What is the most effective step you can take to secure a new computing device?",
-    choices: [
-        "Install numerous antivirus programs",
-        "Leave it in its default state for simplicity",
-        "Update the device to the latest software",
-        "Use it only for web browsing"
-    ],
-    correctAnswer: "Update the device to the latest software",
-    feedback: "Keeping the device updated ensures you have the latest security patches."
-},
-{
-    type: "radiogroup",
-    name: "cyberQuestion10",
-    title: "What action can help to prevent identity theft?",
-    choices: [
-        "Sharing passwords with trusted friends and family",
-        "Using the same password for multiple accounts",
-        "Regularly monitoring your financial accounts for unusual activity",
-        "Posting detailed personal information on social media"
-    ],
-    correctAnswer: "Regularly monitoring your financial accounts for unusual activity",
-    feedback: "Monitoring accounts for unusual activity can help detect and prevent identity theft early."
-}
-    ];
+     const questions = [
+    {
+        name: "cyberQuestion1",
+        type: "radiogroup",
+        title: "Which of the following is a crucial practice for safeguarding against data breaches?",
+        choices: ["Regular software updates", "Checking email once a week", "Using the same password for convenience", "Physical storage of all documents"],
+        correctAnswer: "Regular software updates",
+        feedback: "Regular software updates are crucial as they often include patches for security vulnerabilities that could be exploited by attackers."
+    },
+    {
+        name: "cyberQuestion2",
+        type: "radiogroup",
+        title: "What is the primary purpose of using strong, unique passwords for every account?",
+        choices: ["To make it easier to remember", "To prevent unauthorized access", "To speed up the login process", "To comply with website policies"],
+        correctAnswer: "To prevent unauthorized access",
+        feedback: "Strong, unique passwords for each account reduce the risk of unauthorized access, making it harder for attackers to compromise multiple accounts."
+    },
+    {
+        type: "radiogroup",
+        name: "cyberQuestion3",
+        title: "How does encrypting data protect it?",
+        choices: [
+            "Makes it faster to access",
+            "Reduces its size for storage",
+            "Prevents unauthorized reading of the data",
+            "Improves the data quality"
+        ],
+        correctAnswer: "Prevents unauthorized reading of the data",
+        feedback: "Encryption secures data by transforming it into a format that can only be read if you have the key, protecting it from unauthorized access."
+    },
+    {
+        type: "radiogroup",
+        name: "cyberQuestion4",
+        title: "Why is it important to avoid using public Wi-Fi for sensitive transactions?",
+        choices: [
+            "It can be slower than private networks",
+            "Public Wi-Fi networks are often unsecured, exposing data to interception",
+            "Public Wi-Fi only allows limited data usage",
+            "It requires frequent logins"
+        ],
+        correctAnswer: "Public Wi-Fi networks are often unsecured, exposing data to interception",
+        feedback: "Public Wi-Fi networks lack encryption, which makes sensitive transactions vulnerable to interception by attackers."
+    },
+    {
+        type: "radiogroup",
+        name: "cyberQuestion5",
+        title: "What tactic do attackers use to disguise themselves as legitimate entities in phishing attempts?",
+        choices: [
+            "Offering free software",
+            "Masquerading as a known contact or organization",
+            "Providing helpful cybersecurity tips",
+            "Promoting cybersecurity tools"
+        ],
+        correctAnswer: "Masquerading as a known contact or organization",
+        feedback: "In phishing attempts, attackers often disguise themselves as legitimate entities to trick individuals into divulging sensitive information."
+    },
+    {
+        type: "radiogroup",
+        name: "cyberQuestion6",
+        title: "What is the role of a firewall in network security?",
+        choices: [
+            "Speeding up the network connection",
+            "Monitoring and controlling incoming and outgoing network traffic based on predetermined security rules",
+            "Storing data for network analysis",
+            "Encrypting all data that passes through the network"
+        ],
+        correctAnswer: "Monitoring and controlling incoming and outgoing network traffic based on predetermined security rules",
+        feedback: "Firewalls protect networks by monitoring traffic and blocking potentially harmful incoming and outgoing connections."
+    },
+    {
+        type: "radiogroup",
+        name: "cyberQuestion7",
+        title: "What does two-factor authentication (2FA) enhance?",
+        choices: [
+            "User convenience",
+            "Password memorability",
+            "Account security by requiring an additional verification step",
+            "The speed of the login process"
+        ],
+        correctAnswer: "Account security by requiring an additional verification step",
+        feedback: "2FA enhances security by adding a second layer of verification, significantly reducing the risk of unauthorized access."
+    },
+    {
+        type: "radiogroup",
+        name: "cyberQuestion8",
+        title: "What precaution should you take before connecting devices to your network?",
+        choices: [
+            "Ensure the devices are of the same brand as the network equipment",
+            "Check that the devices are aesthetically compatible with your setup",
+            "Verify the devices do not require Internet access",
+            "Ensure the devices are secure and have the latest updates installed"
+        ],
+        correctAnswer: "Ensure the devices are secure and have the latest updates installed",
+        feedback: "Securing devices with the latest updates before connecting them to your network helps prevent vulnerabilities that could be exploited."
+    },
+    {
+        type: "radiogroup",
+        name: "cyberQuestion9",
+        title: "Why is it critical to backup data regularly?",
+        choices: [
+            "To prevent data loss in case of physical damage or cyberattacks",
+            "To increase the data's value",
+            "To speed up the computer system",
+            "To make data encryption easier"
+        ],
+        correctAnswer: "To prevent data loss in case of physical damage or cyberattacks",
+        feedback: "Regular backups protect against data loss from incidents like ransomware attacks or hardware failures, ensuring data recovery is possible."
+    },
+    {
+        type: "radiogroup",
+        name: "cyberQuestion10",
+        title: "Why should software and operating systems be kept up to date?",
+        choices: [
+            "To maintain the warranty on the hardware",
+            "To keep the user interface trendy",
+            "To ensure compatibility with the latest apps",
+            "To patch security vulnerabilities and enhance protection"
+        ],
+        correctAnswer: "To patch security vulnerabilities and enhance protection",
+        feedback: "Updates often include security patches that close vulnerabilities, making devices more resistant to attacks."
+    }
+];
     // Select a random question to display each time
     const randomQuestionIndex = Math.floor(Math.random() * questions.length);
     const selectedQuestion = questions[randomQuestionIndex];
